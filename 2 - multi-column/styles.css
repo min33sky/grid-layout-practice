@@ -25,6 +25,10 @@ header {
   border: 1px solid #bbc7c7;
 }
 
+header h1 {
+  padding-left: 20px;
+}
+
 article,
 article.featured {
   display: block;
@@ -60,6 +64,11 @@ article h3 {
     gap: 60px;
     align-items: center;
   }
+
+  article:nth-child(n + 2) img {
+    height: 260px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (min-width: 980px) {
@@ -76,5 +85,9 @@ article h3 {
   article {
     grid-column: span 1;
     display: block;
+  }
+
+  article:nth-child(n + 2) img {
+    height: 200px;
   }
 }
