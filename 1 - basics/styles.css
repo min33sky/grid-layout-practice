@@ -2,5 +2,21 @@
 
 body {
   margin: 30px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
+}
+
+.grid-container {
+  background-color: #eee;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-container > div {
+  background-color: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #777;
 }
