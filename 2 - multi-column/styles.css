@@ -65,6 +65,7 @@ article h3 {
     align-items: center;
   }
 
+  /** 두번째 이미지 이후부터 해당 크기 적용  */
   article:nth-child(n + 2) img {
     height: 260px;
     object-fit: cover;
